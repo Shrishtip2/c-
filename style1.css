@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f5f7fb;
+color: #222;
+}
+
+/* Header */
+
+header {
+background: linear-gradient(135deg, #172554, #4338ca);
+color: white;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header h1 {
+font-size: 25px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 25px;
+font-size: 15px;
+}
+
+nav a:hover {
+color: #c7d2fe;
+}
+
+/* Home */
+
+.main {
+min-height: 420px;
+padding: 100px 10%;
+background: linear-gradient(135deg, #e0e7ff, #f5f3ff);
+}
+
+.main h2 {
+font-size: 45px;
+color: #172554;
+margin-bottom: 20px;
+}
+
+.main p {
+max-width: 650px;
+font-size: 18px;
+line-height: 1.7;
+color: #555;
+}
+
+button {
+margin-top: 20px;
+padding: 12px 25px;
+border: none;
+border-radius: 7px;
+background: #4338ca;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+
+button:hover {
+background: #312e81;
+}
+
+/* Section Heading */
+
+.heading {
+text-align: center;
+font-size: 30px;
+color: #172554;
+margin: 50px 0 25px;
+}
+
+/* Event Cards */
+
+.events {
+display: flex;
+justify-content: center;
+gap: 25px;
+padding: 20px 8% 60px;
+}
+
+.card {
+background: white;
+width: 300px;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+color: #4338ca;
+font-size: 21px;
+margin-bottom: 15px;
+}
+
+.card p {
+color: #666;
+margin: 10px 0;
+}
+
+/* Form */
+
+.form-box {
+width: 550px;
+margin: 60px auto;
+background: white;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+text-align: center;
+color: #172554;
+margin-bottom: 25px;
+font-size: 30px;
+}
+
+form label {
+display: block;
+margin-top: 15px;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 7px;
+font-size: 14px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+outline: none;
+border-color: #4338ca;
+}
+
+form textarea {
+height: 120px;
+resize: none;
+}
+
+form button {
+width: 100%;
+}
+
+/* About */
+
+.about {
+width: 80%;
+margin: 60px auto;
+background: white;
+padding: 45px;
+border-radius: 15px;
+box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+.about h2 {
+color: #172554;
+margin: 25px 0 12px;
+}
+
+.about p {
+color: #666;
+line-height: 1.7;
+}
+
+/* Team */
+
+.team {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-top: 25px;
+}
+
+.team .card {
+width: 250px;
+}
+
+/* Footer */
+
+footer {
+background: #172554;
+color: white;
+text-align: center;
+padding: 25px;
+margin-top: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+
+header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+}
+
+.main {
+    padding: 70px 25px;
+}
+
+.main h2 {
+    font-size: 32px;
+}
+
+.events {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+}
+
+.form-box {
+    width: 90%;
+    padding: 25px;
+}
+
+.about {
+    width: 90%;
+    padding: 25px;
+}
+
+.team {
+    flex-direction: column;
+    align-items: center; }
